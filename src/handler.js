@@ -121,7 +121,7 @@ const editBookByIdHandler = (request, h) => {
         name, year, author, summary, publisher, pageCount, readPage, reading,
     } = request.payload;
 
-    const updatedAt = new Date().toISOString;
+    const updatedAt = new Date().toISOString();
     const index = books.findIndex((book) => book.id === id);
 
     if(index !== -1){
